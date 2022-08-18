@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Callback</title>
+</head>
+<body>
+    <h2>JavaScript Callbacks</h2>
+<p>Do a calculation and then display the result.</p>
+<script>
+    /*function Sayhello(){
+        console.log("Hello");
+    }
+    function SayHii(){
+        console.log("Hii..");
+    }
+ function add(num1,num2,callback)
+ {
+  console.log( num1+num2);
+  callback();
+ }
+ add(10,20,Sayhello);
+ add(20,30,function(){
+  console.log("Bye");
+ });*/
+
+
+let  myDisplayer=(something) =>{
+  document.write(something);
+}
+let myCalculator=(num1, num2, Yuvraj)=>
+{
+  let sum = num1 + num2;
+  Yuvraj(sum);
+}
+myCalculator(10, 10, myDisplayer);
+</script>   
+</body>
+</html>
