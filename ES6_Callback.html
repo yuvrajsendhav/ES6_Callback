@@ -27,7 +27,7 @@
  });*/
 
 
-let  myDisplayer=(something) =>{
+/*let  myDisplayer=(something) =>{
   document.write(something);
 }
 let myCalculator=(num1, num2, Yuvraj)=>
@@ -35,7 +35,22 @@ let myCalculator=(num1, num2, Yuvraj)=>
   let sum = num1 + num2;
   Yuvraj(sum);
 }
-myCalculator(10, 10, myDisplayer);
+myCalculator(10, 10, myDisplayer);*/
+    // Another and Best Example
+    function x(calbak)
+     	{
+     		document.write("X CALLED ");
+     		calbak();
+     	}
+     	function y()
+     	{
+     		document.write(" Y CALLED ");
+     		
+     	}
+     	
+     	x(y);
+    // output
+    // X CALLED Y CALLED
 </script>   
 </body>
 </html>
